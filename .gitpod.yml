@@ -1,0 +1,19 @@
+image:
+  file: .gitpod.Dockerfile
+
+# List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: echo 'init script' # runs during prebuild
+    command: echo 'start script'
+
+vscode:
+  extensions:
+    - cyrilletuzi.angular-schematics@2.2.0:fcvnmTtm/saNrBf7ZZBPQw==
+    - ms-vscode.vscode-typescript-tslint-plugin@1.2.3:MioHhlbqHKgivweg8MqHrA==
+    - vscode-icons-team.vscode-icons@9.6.0:pdLRjQynPhO1i+KaGm8EjA==
+    - Angular.ng-template@0.900.0:+zD6sFzwleIgNNsDrLRqnw==
